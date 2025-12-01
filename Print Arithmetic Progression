@@ -1,0 +1,10 @@
+#include <stdio.h>
+int main() {
+ int n, a, d, i = 1;
+ scanf("%d %d %d", &a, &d, &n);
+ while(i <= n) {
+ printf("%d ", a + (i - 1) * d);
+ i++;
+ }
+ return 0;
+}
