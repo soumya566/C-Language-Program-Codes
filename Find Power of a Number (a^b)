@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main() {
+ int a, b, power = 1;
+ scanf("%d%d", &a, &b);
+ while(b > 0) {
+ power *= a;
+ b--;
+ }
+ printf("%d", power);
+ return 0;
+}
