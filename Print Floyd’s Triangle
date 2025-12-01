@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main() {
+ int n, i = 1, num = 1, j;
+ scanf("%d", &n);
+ while(i <= n) {
+ j = 1;
+ while(j <= i) {
+ printf("%d ", num++);
+ j++;
+ }
+ printf("\n");
+ i++;
+ }
+ return 0;
+}
