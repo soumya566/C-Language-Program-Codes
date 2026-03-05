@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <string.h>
+int main() {
+ char pass[20];
+ int tries = 0;
+ while(tries < 3) {
+ printf("Password: ");
+ scanf("%s", pass);
+ if(strcmp(pass, "admin123") == 0) {
+ printf("Access Granted\n");
+ return 0;
+ } else
+ printf("Try Again\n");
+ tries++;
+ }
+ printf("Access Denied\n");
+ return 0;
+}
