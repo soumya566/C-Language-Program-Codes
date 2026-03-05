@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main() {
+ int n, i = 1, j, fact;
+ scanf("%d", &n);
+ while(i <= n) {
+ fact = 1;
+ j = 1;
+ while(j <= i) {
+ fact *= j;
+ j++;
+ }
+ printf("%d ", fact);
+ i++;
+ }
+ return 0;
+}
